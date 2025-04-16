@@ -1,0 +1,35 @@
+{
+  "skills": [
+    {
+      "name": "Code",
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "ES6",
+        "React",
+        "Styled Components",
+        "GitHub"
+      ]
+    },
+    {
+      "name": "Toolbox",
+      "skills": [
+        "Framer",
+        "Canva",
+        "Adobe Photoshop",
+        "Figma",
+        "Slack",
+        "Mendix"
+      ]
+    },
+    {
+      "name": "Upcoming",
+      "skills": ["Node.js"]
+    },
+    {
+      "name": "More",
+      "skills": ["Agile Methodology", "Concept", "Development"]
+    }
+  ]
+}
