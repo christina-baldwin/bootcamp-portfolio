@@ -46,13 +46,39 @@ body {
   z-index: 2;
 }
 
+/* TECH */
+.tech {
+  text-align: center;
+}
+
+/* PROJECTS */
+.project ul {
+  list-style: none;
+  display: flex;
+}
+
+/* SKILLS */
+.skills-table {
+  display: flex;
+  gap: 2rem;
+}
+
+.skills-table ul {
+  list-style: none;
+}
+
 /* BLOG */
+.article {
+  display: flex;
+  gap: 3rem;
+}
+
 .article img {
   max-width: 50%;
   border-radius: 5px;
 }
 
-.article {
-  display: flex;
-  gap: 3rem;
+/* CONTACT */
+.contact {
+  text-align: center;
 }
