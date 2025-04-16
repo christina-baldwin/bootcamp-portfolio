@@ -48,5 +48,11 @@ body {
 
 /* BLOG */
 .article img {
-  max-width: 500px;
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+.article {
+  display: flex;
+  gap: 3rem;
 }
