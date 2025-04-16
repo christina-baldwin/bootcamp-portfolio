@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Blog from "./components/Blog";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <Tech />
       <Projects />
       <Skills />
+      <Blog />
     </>
   );
 };
