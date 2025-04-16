@@ -1,10 +1,12 @@
+import HeroImages from "./HeroImages";
+
 const Hero = (props) => {
   return (
-    <>
-      <img src={props.logo} />
+    <div className="hero">
+      <img className="logo" src={props.logo} />
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
-      <img src={props.img} />
+      <HeroImages />
       <h3>{props.title}</h3>
       <p>
         I began learning frontend and web development in March 2024 after moving
@@ -16,7 +18,7 @@ const Hero = (props) => {
         playing video games.
       </p>
       <button>Contact Me!</button>
-    </>
+    </div>
   );
 };
 
