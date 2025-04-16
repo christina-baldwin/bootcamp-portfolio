@@ -1,6 +1,7 @@
 const BlogArticle = (props) => {
   return (
     <div key={props.title} className="article">
+      <img src={props.img} />
       <p>{props.date}</p>
       <h3>{props.title}</h3>
       <p>{props.desc}</p>

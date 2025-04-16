@@ -13,6 +13,7 @@ const Blog = () => {
           desc={article.desc}
           link={article.link}
           type={article.type}
+          img={article.img}
         />
       ))}
       <button>See more articles</button>
