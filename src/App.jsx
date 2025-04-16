@@ -7,6 +7,7 @@ export const App = () => {
   return (
     <>
       <Hero
+        img="../public/logo192.png"
         name="Christina Baldwin"
         title="A Frontend Developer with a Background in Sustainability"
       />
