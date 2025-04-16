@@ -9,8 +9,8 @@ export const App = () => {
         name="Christina Baldwin"
         title="Frontend Developer with a Background in Sustainability"
       ></Hero>
-      <Tech></Tech>
-      <Projects></Projects>
+      <Tech />
+      <Projects />
     </>
   );
 };
