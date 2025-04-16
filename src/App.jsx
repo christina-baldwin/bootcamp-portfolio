@@ -7,7 +7,8 @@ export const App = () => {
   return (
     <>
       <Hero
-        img="../public/logo192.png"
+        logo="../public/logo192.png"
+        img="../public/hero-img.png"
         name="Christina Baldwin"
         title="A Frontend Developer with a Background in Sustainability"
       />

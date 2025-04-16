@@ -1,9 +1,10 @@
 const Hero = (props) => {
   return (
     <>
-      <img src={props.img} />
+      <img src={props.logo} />
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
+      <img src={props.img} />
       <h3>{props.title}</h3>
       <p>
         I began learning frontend and web development in March 2024 after moving
