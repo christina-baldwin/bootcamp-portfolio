@@ -6,6 +6,7 @@ const Hero = (props) => {
       <img className="logo" src={props.logo} />
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
+      <hr />
       <HeroImages />
       <h3>{props.title}</h3>
       <p>

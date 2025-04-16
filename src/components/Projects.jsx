@@ -23,6 +23,7 @@ const Projects = () => {
           github={project.github}
         />
       ))}
+      <button>Load more projects</button>
     </div>
   );
 };
