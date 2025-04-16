@@ -23,3 +23,11 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+
+# images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
