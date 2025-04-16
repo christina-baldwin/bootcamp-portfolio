@@ -8,8 +8,8 @@ export const App = () => {
     <>
       <Hero
         name="Christina Baldwin"
-        title="Frontend Developer with a Background in Sustainability"
-      ></Hero>
+        title="A Frontend Developer with a Background in Sustainability"
+      />
       <Tech />
       <Projects />
       <Skills />
