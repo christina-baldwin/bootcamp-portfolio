@@ -1,28 +1,102 @@
 {
   "projects": [
     {
-      "name": "Business site",
-      "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "JavaScript"
-      ],
-      "netlify": "link",
-      "github": "link"
+      "title": "reCovers",
+      "link": "https://recoverssweden.se",
+      "description": "Designed and built a single-page site for a sustainable company focused on developing reusable shoe covers. Used headless CMS to allow the client to easily modify content. Communicated regularly with the client to integrate their goals into the design and functionality of the site. Continuing to manage the page.",
+      "skills": ["Gatsby", "CSS", "JavaScript", "GraphQL", "CMS"],
+      "tag": "custom"
     },
     {
-      "name": "Weather app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "TypeScript",
-        "APIs"
-      ],
-      "netlify": "link",
-      "github": "link"
+      "title": "Gambit's Chronicles",
+      "link": "https://gambits-chronicles.netlify.app",
+      "description": "A blog dedicated to my pet milk snake, Gambit. Designed and built myself.",
+      "skills": ["HTML", "CSS"],
+      "tag": "custom"
+    },
+    {
+      "title": "Pig Game",
+      "link": "https://pig-game-cb.netlify.app/",
+      "description": "A 2-player game which involves dice rolls, adding up of scores and a winning/losing interface.",
+      "skills": ["CSS", "JavaScript"],
+      "tag": "custom"
+    },
+    {
+      "title": "Tic Tac Toe",
+      "link": "https://tic-tac-toe-christina-baldwin.netlify.app/",
+      "description": "2-player tic-tac-toe game. Player name change, assigns player symbol, winner pop-up with rematch functionality. Additions: restart button added, player input fields changed to allow instant typing.",
+      "skills": ["React", "JavaScript"],
+      "tag": "custom"
+    },
+    {
+      "title": "Job Scraper",
+      "link": "#",
+      "description": "WIP. A collaboration between myself and another developer to help me in my job-search.",
+      "skills": ["JavaScript", "Playwright"],
+      "tag": "custom"
+    },
+    {
+      "title": "Weather App",
+      "link": "https://wind1weatherapp.netlify.app/",
+      "description": "A group project with the aim of building an app that displays weather data fetched from an API. Collaborated using Git.",
+      "skills": ["HTML", "CSS", "TypeScript"],
+      "tag": "bootcamp"
+    },
+    {
+      "title": "Recipe Library",
+      "link": "https://christinas-recipe-library.netlify.app/",
+      "description": "A web app that acts as a recipe library, displaying recipes based on API data and allowing filtering and sorting.",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "tag": "bootcamp"
+    },
+    {
+      "title": "The Crit & Cauldron",
+      "link": "https://crit-cauldron.netlify.app/",
+      "description": "A website relating to card games, miniatures, and role-playing games including a shop and a blog.",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "tag": "bootcamp"
+    },
+    {
+      "title": "The Code Magazine",
+      "link": "https://the-code-magazine-cb.netlify.app/",
+      "description": "A simple blog built using basic concepts. Was the first project I built. (Instructor: Jonas Schmedtmann)",
+      "skills": ["HTML", "CSS"],
+      "tag": "course"
+    },
+    {
+      "title": "Lisbon Chair Shop",
+      "link": "https://lisbon-chair-shop-cb.netlify.app/",
+      "description": "A simple e-commerce website built using some more web development techniques. (Instructor: Jonas Schmedtmann)",
+      "skills": ["HTML", "CSS"],
+      "tag": "course"
+    },
+    {
+      "title": "Omnifood",
+      "link": "https://omnifood-christina-baldwin.netlify.app/",
+      "description": "The big final project of one of the web development courses I completed which involved the process of building a website from start to finish. A food subscription service website. (Instructor: Jonas Schmedtmann)",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "tag": "course"
+    },
+    {
+      "title": "Guess My Number",
+      "link": "https://guess-my-number-cb.netlify.app/",
+      "description": "A small number-guessing game built through a JavaScript course. (Instructor: Jonas Schmedtmann)",
+      "skills": ["JavaScript"],
+      "tag": "course"
+    },
+    {
+      "title": "Bankist App",
+      "link": "https://bankist-app-cb.netlify.app/",
+      "description": "A banking app that implements login, account closing, and transactions such as transfers, payments, and loans. (Instructor: Jonas Schmedtmann)",
+      "skills": ["JavaScript"],
+      "tag": "course"
+    },
+    {
+      "title": "Bankist Website",
+      "link": "https://bankist-christina-baldwin.netlify.app/",
+      "description": "A banking website that allows for account creation, and displays a minimalist interface with testimonials, slow-loading images, sticky navigation, and other DOM manipulation techniques. Changed some of the text to sound better and added a link to the web app. (Instructor: Jonas Schmedtmann)",
+      "skills": ["JavaScript"],
+      "tag": "course"
     }
   ]
 }
