@@ -21,7 +21,7 @@ const Projects = () => {
           tag={project.tag}
           link={project.link}
           github={project.github}
-        ></Project>
+        />
       ))}
     </div>
   );
