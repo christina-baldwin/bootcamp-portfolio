@@ -24,7 +24,7 @@ const Projects = () => {
           github={project.github}
         />
       ))}
-      <button className="projects-btn">
+      <button className="see-more-btn">
         <ion-icon name="arrow-down-circle-outline"></ion-icon>See more projects
       </button>
     </div>

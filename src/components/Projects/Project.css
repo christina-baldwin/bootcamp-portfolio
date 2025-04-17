@@ -13,10 +13,6 @@
   padding: 0.2rem;
 }
 
-.project-tag {
-  font-style: italic;
-}
-
 .project-links {
   display: flex;
   flex-direction: column;

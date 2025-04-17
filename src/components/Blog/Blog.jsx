@@ -17,7 +17,9 @@ const Blog = () => {
           img={article.img}
         />
       ))}
-      <button>See more articles</button>
+      <button className="see-more-btn">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>See more articles
+      </button>
     </div>
   );
 };

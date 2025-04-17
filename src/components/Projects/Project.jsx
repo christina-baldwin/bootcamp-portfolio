@@ -12,7 +12,7 @@ const Project = (props) => {
         ))}
       </ul>
       <p className="m-b-s">{props.description}</p>
-      <p className="project-tag m-b-s">#{props.tag}-project</p>
+      <p className="category-tag m-b-s">#{props.tag}-project</p>
       <div className="project-links">
         <a className="project-link demo-link" href={props.link}>
           <ion-icon name="globe-outline"></ion-icon>To Project Demo
