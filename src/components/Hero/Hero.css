@@ -6,3 +6,9 @@
 .logo {
   width: 3%;
 }
+
+.hero-btn:hover,
+.hero-btn:active {
+  transition: all 0.3s ease;
+  transform: translate(2px, -2px);
+}

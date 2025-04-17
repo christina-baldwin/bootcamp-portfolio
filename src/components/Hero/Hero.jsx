@@ -19,7 +19,7 @@ const Hero = (props) => {
         Outside of coding, I enjoy Olympic weightlifting, CrossFit, reading, and
         playing video games.
       </p>
-      <button>Contact Me!</button>
+      <button className="hero-btn">Contact Me!</button>
     </div>
   );
 };
