@@ -3,7 +3,7 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div className="skills m-b-l">
+    <div className="skills m-b-l p-l bg-colour-1">
       <h2 className="text-center">Skills</h2>
       <div className="skills-table">
         {skillsData.skills.map((skill) => (

@@ -7,7 +7,6 @@ body {
   background: black;
   color: white;
   line-height: 1.5;
-  padding: 5rem 7rem;
 }
 
 h1 {
@@ -68,5 +67,15 @@ button {
 }
 
 .p-l {
-  padding: 7rem;
+  padding: 5rem 7rem;
+}
+
+.bg-colour-1 {
+  background-color: white;
+  color: black;
+}
+
+.bg-colour-2 {
+  background-color: black;
+  color: white;
 }
