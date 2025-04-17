@@ -2,12 +2,12 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact m-b-l">
       <h2>Get in touch!</h2>
-      <hr />
+      <hr className="m-b-s" />
       <h3>Christina Baldwin</h3>
-      <p>+46(0)729 193 108</p>
-      <p>christina.baldwin13@yahoo.com</p>
+      <p className="m-b-s">+46(0)729 193 108</p>
+      <p className="m-b-s">christina.baldwin13@yahoo.com</p>
       <div className="contact-links">
         <a href="">
           <ion-icon name="logo-linkedin"></ion-icon>

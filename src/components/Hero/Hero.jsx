@@ -3,14 +3,14 @@ import "./Hero.css";
 
 const Hero = (props) => {
   return (
-    <div className="hero">
-      <img className="logo" src={props.logo} />
+    <div className="hero m-b-l">
+      <img className="logo m-b-s" src={props.logo} />
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
       <hr />
       <HeroImages />
       <h3>{props.title}</h3>
-      <p>
+      <p className="m-b-s">
         I began learning frontend and web development in March 2024 after moving
         to Sweden, where I had time to rediscover my interest in tech. With
         access to resources, I quickly became invested in coding and decided to

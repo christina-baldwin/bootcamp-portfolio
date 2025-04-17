@@ -2,14 +2,16 @@ import "./BlogArticle.css";
 
 const BlogArticle = (props) => {
   return (
-    <div key={props.title} className="article">
+    <div key={props.title} className="article m-b-m">
       <img src={props.img} />
       <div className="article-text">
-        <p>{props.date}</p>
+        <p className="m-b-s">{props.date}</p>
         <h3>{props.title}</h3>
-        <p>{props.desc}</p>
-        <p>#{props.type}-article</p>
-        <a href={props.link}>Read article</a>
+        <p className="m-b-s">{props.desc}</p>
+        <p className="m-b-s">#{props.type}-article</p>
+        <a className="m-b-s" href={props.link}>
+          Read article
+        </a>
       </div>
     </div>
   );
