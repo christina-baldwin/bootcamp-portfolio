@@ -1,5 +1,6 @@
 import projectsData from "../../data/projects.json";
 import Project from "./Project";
+import "./Projects.css";
 
 const Projects = () => {
   return (
@@ -23,7 +24,9 @@ const Projects = () => {
           github={project.github}
         />
       ))}
-      <button>Load more projects</button>
+      <button className="projects-btn">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>See more projects
+      </button>
     </div>
   );
 };
