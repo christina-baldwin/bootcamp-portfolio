@@ -1,6 +1,13 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .skills-table {
   display: flex;
   gap: 2rem;
+  margin: 0 auto;
 }
 
 .skills-table ul {

@@ -5,7 +5,7 @@ import "./Blog.css";
 const Blog = () => {
   return (
     <div className="blog">
-      <h2>Blog</h2>
+      <h2 className="text-center">Blog</h2>
       {articlesData.articles.map((article) => (
         <BlogArticle
           key={article.id}
