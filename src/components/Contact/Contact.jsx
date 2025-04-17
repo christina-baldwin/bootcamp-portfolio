@@ -9,10 +9,10 @@ const Contact = () => {
       <p className="m-b-s">+46(0)729 193 108</p>
       <p className="m-b-s">christina.baldwin13@yahoo.com</p>
       <div className="contact-links">
-        <a href="">
+        <a className="contact-link" href="">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
-        <a href="">
+        <a className="contact-link" href="">
           <ion-icon name="logo-github"></ion-icon>
         </a>
       </div>

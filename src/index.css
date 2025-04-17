@@ -47,6 +47,13 @@ button {
   cursor: pointer;
 }
 
+hr {
+  background-color: #4ecdc4;
+  height: 7px;
+  width: 800px;
+  margin: 0 auto;
+}
+
 .text-center {
   text-align: center;
 }
