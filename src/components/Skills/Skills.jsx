@@ -8,7 +8,7 @@ const Skills = () => {
       <div className="skills-table">
         {skillsData.skills.map((skill) => (
           <div key={skill.name}>
-            <h3 className="text-center">{skill.name}</h3>
+            <h4 className="skill-name text-center p-s">{skill.name}</h4>
             <ul>
               {skill.skills.map((item, index) => (
                 <li key={index}>{item}</li>

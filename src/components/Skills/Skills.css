@@ -13,3 +13,8 @@
 .skills-table ul {
   list-style: none;
 }
+
+.skill-name {
+  background-color: #4ecdc4;
+  border-radius: 5px;
+}
