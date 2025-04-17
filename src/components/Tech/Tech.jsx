@@ -1,3 +1,5 @@
+import "./Tech.css";
+
 const Tech = (props) => {
   return (
     <div className="tech">

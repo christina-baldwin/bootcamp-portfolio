@@ -1,0 +1,9 @@
+.tech {
+  text-align: center;
+}
+
+/* PROJECTS */
+.project ul {
+  list-style: none;
+  display: flex;
+}

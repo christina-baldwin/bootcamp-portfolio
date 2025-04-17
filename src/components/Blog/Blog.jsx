@@ -1,5 +1,6 @@
 import BlogArticle from "./BlogArticle";
-import articlesData from "../data/articles.json";
+import articlesData from "../../data/articles.json";
+import "./Blog.css";
 
 const Blog = () => {
   return (

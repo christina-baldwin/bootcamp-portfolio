@@ -1,0 +1,8 @@
+.skills-table {
+  display: flex;
+  gap: 2rem;
+}
+
+.skills-table ul {
+  list-style: none;
+}

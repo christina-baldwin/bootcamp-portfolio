@@ -1,3 +1,5 @@
+import "./BlogArticle.css";
+
 const BlogArticle = (props) => {
   return (
     <div key={props.title} className="article">

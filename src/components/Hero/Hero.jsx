@@ -1,4 +1,5 @@
 import HeroImages from "./HeroImages";
+import "./Hero.css";
 
 const Hero = (props) => {
   return (

@@ -1,4 +1,5 @@
-import skillsData from "../data/skills.json";
+import skillsData from "../../data/skills.json";
+import "./Skills.css";
 
 const Skills = () => {
   return (

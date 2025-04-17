@@ -7,8 +7,8 @@ const Project = (props) => {
           <li key={index}>{skill}</li>
         ))}
       </ul>
-      <div>{props.description}</div>
-      <div>#{props.tag}-project</div>
+      <p>{props.description}</p>
+      <p>#{props.tag}-project</p>
       <a href={props.link}>To Project Demo</a>
       <a href={props.github}>View Code</a>
     </div>
