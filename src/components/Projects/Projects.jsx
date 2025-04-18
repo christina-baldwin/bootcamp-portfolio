@@ -1,5 +1,6 @@
 import projectsData from "../../data/projects.json";
 import Project from "./Project";
+import Dropdown from "./Dropdown";
 import "./Projects.css";
 
 const Projects = () => {
@@ -12,7 +13,7 @@ const Projects = () => {
         Please use the filter to better see what type of projects you are
         viewing.
       </p>
-      <button className="text-center m-b-m">Filter projects by</button>
+      <Dropdown />
       {projectsData.projects.map((project) => (
         <Project
           key={project.id}
