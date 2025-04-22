@@ -1,8 +1,13 @@
 import "./Contact.css";
+import styled from "styled-components";
+
+const ContactContainer = styled.div`
+  text-align: center;
+`;
 
 const Contact = () => {
   return (
-    <div className="contact m-b-l p-l">
+    <ContactContainer className="m-b-l p-l">
       <h2>Get in touch!</h2>
       <hr className="m-b-s" />
       <h3>Christina Baldwin</h3>
@@ -16,7 +21,7 @@ const Contact = () => {
           <ion-icon name="logo-github"></ion-icon>
         </a>
       </div>
-    </div>
+    </ContactContainer>
   );
 };
 

@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+const GlobalStyle = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
@@ -114,3 +116,6 @@ hr {
 .category-tag {
   font-style: italic;
 }
+`;
+
+export default GlobalStyle;
