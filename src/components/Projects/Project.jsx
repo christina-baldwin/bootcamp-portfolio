@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import ProjectBtn from "../Btns/ProjectBtn";
+import { media } from "../../media";
 
-const ProjectContainer = styled.div``;
+const ProjectContainer = styled.div`
+  @media ${media.smallDesktop} {
+    padding-right: 7rem;
+  }
+`;
 
 const SkillTags = styled.div`
   display: flex;
@@ -22,6 +27,14 @@ const ProjectLinks = styled.div`
 
   @media ${media.tablet} {
     width: 50%;
+  }
+
+  @media ${media.tabletLandscape} {
+    width: 40%;
+  }
+
+  @media ${media.smallDesktop} {
+    width: 30%;
   }
 `;
 

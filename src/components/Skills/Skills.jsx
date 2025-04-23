@@ -1,5 +1,6 @@
 import skillsData from "../../data/skills.json";
 import styled from "styled-components";
+import { media } from "../../media";
 
 const SkillsContainer = styled.div`
   display: flex;
@@ -13,6 +14,17 @@ const SkillsTable = styled.div`
   gap: 2rem;
   margin: 0 auto;
   justify-content: center;
+
+  @media ${media.tabletLandscape} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media ${media.smallDesktop} {
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const SkillsList = styled.ul`

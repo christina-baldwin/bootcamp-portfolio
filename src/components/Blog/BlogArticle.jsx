@@ -5,16 +5,29 @@ const Article = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
+
+  @media ${media.smallDesktop} {
+    flex-direction: row;
+  }
 `;
 const ArticleImg = styled.img`
   max-width: 100%;
   border-radius: 5px;
+
+  @media ${media.smallDesktop} {
+    max-width: 50%;
+    height: auto;
+  }
 `;
 const ArticleDate = styled.p`
   border: 2px solid white;
   border-radius: 5px;
   padding: 0.2rem;
   width: 100%;
+
+  @media ${media.smallDesktop} {
+    width: 40%;
+  }
 `;
 const ArticleLink = styled.a`
   display: flex;
@@ -41,6 +54,14 @@ const ArticleLink = styled.a`
 
   @media ${media.tablet} {
     width: 50%;
+  }
+
+  @media ${media.tabletLandscape} {
+    width: 40%;
+  }
+
+  @media ${media.smallDesktop} {
+    width: 40%;
   }
 `;
 

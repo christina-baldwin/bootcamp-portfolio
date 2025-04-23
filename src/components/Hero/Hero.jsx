@@ -13,9 +13,21 @@ const HeroSection = styled.div`
   @media ${media.tablet} {
     padding: 4rem;
   }
+
+  @media ${media.smallDesktop} {
+    padding: 5rem;
+  }
 `;
 const HeroLogo = styled.img`
   width: 15%;
+
+  @media ${media.tabletLandscape} {
+    width: 10%;
+  }
+
+  @media ${media.smallDesktop} {
+    width: 7%;
+  }
 `;
 const HeroButton = styled.button`
   padding: 10px 20px;

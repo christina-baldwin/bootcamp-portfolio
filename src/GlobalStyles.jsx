@@ -104,6 +104,17 @@ hr {
   color: white;
 }
 
+@media ${media.tabletLandscape} {
+  html {
+    font-size: 105%;
+  }
+}
+@media ${media.smallDesktop} {
+  html {
+    font-size: 110%;
+  }
+}
+
 }
 `;
 
