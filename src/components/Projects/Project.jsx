@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ProjectBtn from "../Btns/ProjectBtn";
 import { media } from "../../media";
+import { media } from "../../media";
 
 const ProjectContainer = styled.div`
   @media ${media.smallDesktop} {
