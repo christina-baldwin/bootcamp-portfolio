@@ -28,18 +28,6 @@ const ProjectLinks = styled.div`
   @media ${media.tablet} {
     width: 50%;
   }
-
-  @media ${media.tabletLandscape} {
-    width: 40%;
-  }
-
-  @media ${media.smallDesktop} {
-    width: 30%;
-  }
-
-  @media ${media.desktop} {
-    width: 20%;
-  }
 `;
 
 const Project = (props) => {

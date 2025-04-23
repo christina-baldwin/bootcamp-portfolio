@@ -22,14 +22,10 @@ const SkillsTable = styled.div`
 
   @media ${media.smallDesktop} {
     gap: 2rem;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   @media ${media.desktop} {
     gap: 3rem;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 `;
 

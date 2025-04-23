@@ -36,6 +36,10 @@ const HeroLogo = styled.img`
   @media ${media.desktop} {
     width: 5%;
   }
+
+  @media ${media.largeDesktop} {
+    width: 4.5%;
+  }
 `;
 const HeroButton = styled.button`
   padding: 10px 20px;

@@ -72,12 +72,7 @@ const ArticleLink = styled.a`
     width: 40%;
   }
 
-  @media ${media.smallDesktop} {
-    width: 40%;
-  }
-
   @media ${media.desktop} {
-    width: 30%;
     font-size: 1.2rem;
   }
 `;

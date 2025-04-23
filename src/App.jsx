@@ -11,7 +11,6 @@ import styled from "styled-components";
 const AppWrapper = styled.div`
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 1rem; // some side padding for breathing room
 `;
 
 export const App = () => {

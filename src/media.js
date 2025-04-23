@@ -1,8 +1,7 @@
 export const media = {
-  mobile: "(max-width: 480px)",
-  tablet: "(max-width: 767px)",
-  tabletLandscape: "(max-width: 1024px)",
-  smallDesktop: "(max-width: 1280px)",
-  desktop: "(max-width: 1440px)",
+  tablet: "(min-width: 481px)",
+  tabletLandscape: "(min-width: 768px)",
+  smallDesktop: "(min-width: 1025px)",
+  desktop: "(min-width: 1281px)",
   largeDesktop: "(min-width: 1441px)",
 };

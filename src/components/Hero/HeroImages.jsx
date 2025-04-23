@@ -25,6 +25,10 @@ const HeroImgs = styled.div`
   @media ${media.desktop} {
     height: 60rem;
   }
+
+  media ${media.largeDesktop} {
+    height: 70rem;
+  }
 `;
 const HeroImg = styled.img`
   position: absolute;
