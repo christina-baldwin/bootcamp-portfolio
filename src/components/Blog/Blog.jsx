@@ -1,4 +1,5 @@
 import BlogArticle from "./BlogArticle";
+import SeeMore from "../Btns/SeeMoreBtn";
 import articlesData from "../../data/articles.json";
 
 const Blog = () => {
@@ -16,9 +17,7 @@ const Blog = () => {
           img={article.img}
         />
       ))}
-      <button className="see-more-btn">
-        <ion-icon name="arrow-down-circle-outline"></ion-icon>See more articles
-      </button>
+      <SeeMore section="articles" />
     </div>
   );
 };

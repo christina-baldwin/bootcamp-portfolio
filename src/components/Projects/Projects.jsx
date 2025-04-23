@@ -1,6 +1,7 @@
 import projectsData from "../../data/projects.json";
 import Project from "./Project";
 import Dropdown from "./Dropdown";
+import SeeMore from "../Btns/SeeMoreBtn";
 
 const Projects = () => {
   return (
@@ -24,9 +25,7 @@ const Projects = () => {
           github={project.github}
         />
       ))}
-      <button className="see-more-btn">
-        <ion-icon name="arrow-down-circle-outline"></ion-icon>See more projects
-      </button>
+      <SeeMore section="projects" />
     </div>
   );
 };
