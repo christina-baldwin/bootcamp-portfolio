@@ -5,7 +5,7 @@ import SeeMore from "../Btns/SeeMoreBtn";
 
 const Projects = () => {
   return (
-    <div className="projects m-b-l p-l">
+    <div className="projects m-b-l p-m">
       <h2 className="text-center">My Projects</h2>
       <p className="text-center m-b-s">
         All of my different projects made either from scratch, from bootcamp

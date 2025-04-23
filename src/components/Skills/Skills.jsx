@@ -9,12 +9,15 @@ const SkillsContainer = styled.div`
 
 const SkillsTable = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
+  justify-content: center;
 `;
 
 const SkillsList = styled.ul`
   list-style: none;
+  text-align: center;
 `;
 
 const SkillName = styled.li`

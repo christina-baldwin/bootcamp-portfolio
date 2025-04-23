@@ -7,7 +7,7 @@ const StyledBtn = styled.a`
   text-decoration: none;
   padding: 0.2rem 0.4rem;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
 
   background-color: ${(props) =>
@@ -15,8 +15,6 @@ const StyledBtn = styled.a`
   color: ${(props) => (props.$type === "demo" ? "black" : "white")};
   border: ${(props) =>
     props.$type === "demo" ? "3px solid #4ecdc4" : "1px solid white"};
-
-  width: ${(props) => props.$width || "15%"};
 
   &:hover,
   &:active {

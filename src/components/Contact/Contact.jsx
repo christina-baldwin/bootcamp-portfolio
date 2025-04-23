@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const ContactContainer = styled.div`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 const ContactLinks = styled.div`
   display: flex;
@@ -25,14 +28,23 @@ const ContactLink = styled.a`
   }
 `;
 
+const StyledHr = styled.hr`
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #4ecdc4;
+  margin: 2rem auto;
+`;
+
 const Contact = () => {
   return (
-    <ContactContainer className="m-b-l p-l">
-      <h2>Get in touch!</h2>
-      <hr className="m-b-s" />
-      <h3>Christina Baldwin</h3>
-      <p className="m-b-s">+46(0)729 193 108</p>
-      <p className="m-b-s">christina.baldwin13@yahoo.com</p>
+    <ContactContainer className="m-b-l p-m">
+      <h2 className="text-center">Get in touch!</h2>
+      <StyledHr className="m-b-s" />
+      <h3 className="text-center">Christina Baldwin</h3>
+      <p className="text-center m-b-s">+46(0)729 193 108</p>
+      <p className="text-center m-b-s">christina.baldwin13@yahoo.com</p>
       <ContactLinks>
         <ContactLink href="#">
           <ion-icon name="logo-linkedin"></ion-icon>

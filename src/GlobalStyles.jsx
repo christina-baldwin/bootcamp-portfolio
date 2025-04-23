@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import { media } from "./media";
+
 const GlobalStyle = createGlobalStyle`
 * {
   margin: 0;
@@ -16,33 +18,33 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 button {
   background-color: #4ecdc4;
   border: none;
   padding: 0.7rem 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
   margin: 0 auto;
   border-radius: 5px;
@@ -100,6 +102,8 @@ hr {
 .bg-colour-2 {
   background-color: black;
   color: white;
+}
+
 }
 `;
 

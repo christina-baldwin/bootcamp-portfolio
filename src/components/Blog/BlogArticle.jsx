@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 const Article = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 3rem;
 `;
 const ArticleImg = styled.img`
-  max-width: 50%;
+  max-width: 100%;
   border-radius: 5px;
 `;
 const ArticleDate = styled.p`
   border: 2px solid white;
   border-radius: 5px;
   padding: 0.2rem;
-  width: 20%;
+  width: 100%;
 `;
 const ArticleLink = styled.a`
   display: flex;
-  width: 25%;
   align-items: center;
   gap: 0.2rem;
   text-decoration: none;

@@ -7,11 +7,11 @@ const HeroImgs = styled.div`
   align-items: center;
   width: 100%;
   aspect-ratio: 3 / 1;
-  height: 45rem;
+  height: 20rem;
 `;
 const HeroImg = styled.img`
   position: absolute;
-  width: 30%;
+  width: 40%;
   max-width: 300px;
   transition: transform 0.3s ease, z-index 0.3s ease;
   border-radius: 8px;

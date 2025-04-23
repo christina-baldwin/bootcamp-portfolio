@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import ProjectBtn from "../Btns/ProjectBtn";
 
-const ProjectContainer = styled.div`
-  padding-right: 10rem;
-`;
+const ProjectContainer = styled.div``;
 
 const SkillTags = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 0.3rem;
 `;
 

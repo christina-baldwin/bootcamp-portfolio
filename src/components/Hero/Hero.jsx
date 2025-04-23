@@ -2,15 +2,18 @@ import styled from "styled-components";
 import HeroImages from "./HeroImages";
 
 const HeroSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5rem 7rem;
+  padding: 3rem;
 `;
 const HeroLogo = styled.img`
-  width: 3%;
+  width: 20%;
 `;
 const HeroButton = styled.button`
   padding: 10px 20px;
-  font-size: 1.5rem;
   background-color: #4ecdc4;
   color: black;
   border: none;
@@ -24,13 +27,22 @@ const HeroButton = styled.button`
   }
 `;
 
+const StyledHr = styled.hr`
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #4ecdc4;
+  margin: 2rem auto;
+`;
+
 const Hero = (props) => {
   return (
     <HeroSection className="m-b-l">
       <HeroLogo className="logo m-b-s" src={props.logo} />
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
-      <hr />
+      <StyledHr />
       <HeroImages />
       <h3>{props.title}</h3>
       <p className="m-b-s">
