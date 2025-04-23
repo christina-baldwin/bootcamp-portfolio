@@ -25,6 +25,10 @@ const StyledBtn = styled.a`
   @media ${media.tablet} {
     width: 50%;
   }
+
+  @media ${media.desktop} {
+    font-size: 1.2rem;
+  }
 `;
 
 const ProjectBtn = (props) => {

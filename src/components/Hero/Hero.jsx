@@ -17,6 +17,10 @@ const HeroSection = styled.div`
   @media ${media.smallDesktop} {
     padding: 5rem;
   }
+
+  @media ${media.desktop} {
+    padding: 6rem;
+  }
 `;
 const HeroLogo = styled.img`
   width: 15%;
@@ -27,6 +31,10 @@ const HeroLogo = styled.img`
 
   @media ${media.smallDesktop} {
     width: 7%;
+  }
+
+  @media ${media.desktop} {
+    width: 5%;
   }
 `;
 const HeroButton = styled.button`

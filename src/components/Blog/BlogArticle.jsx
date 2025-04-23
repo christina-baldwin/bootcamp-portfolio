@@ -9,12 +9,21 @@ const Article = styled.div`
   @media ${media.smallDesktop} {
     flex-direction: row;
   }
+
+  @media ${media.desktop} {
+    flex-direction: row;
+  }
 `;
 const ArticleImg = styled.img`
   max-width: 100%;
   border-radius: 5px;
 
   @media ${media.smallDesktop} {
+    max-width: 50%;
+    height: auto;
+  }
+
+  @media ${media.desktop} {
     max-width: 50%;
     height: auto;
   }
@@ -27,6 +36,9 @@ const ArticleDate = styled.p`
 
   @media ${media.smallDesktop} {
     width: 40%;
+  }
+  @media ${media.desktop} {
+    width: 30%;
   }
 `;
 const ArticleLink = styled.a`
@@ -62,6 +74,11 @@ const ArticleLink = styled.a`
 
   @media ${media.smallDesktop} {
     width: 40%;
+  }
+
+  @media ${media.desktop} {
+    width: 30%;
+    font-size: 1.2rem;
   }
 `;
 

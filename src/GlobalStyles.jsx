@@ -109,12 +109,39 @@ hr {
     font-size: 105%;
   }
 }
+
 @media ${media.smallDesktop} {
   html {
     font-size: 110%;
   }
 }
 
+  @media ${media.desktop} {
+   h1 {
+   font-size: 4rem;
+   } 
+
+   h2 {
+    font-size: 2.5rem;
+    }
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.3rem;
+}
+
+  }
 }
 `;
 

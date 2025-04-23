@@ -25,6 +25,12 @@ const SkillsTable = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media ${media.desktop} {
+    gap: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const SkillsList = styled.ul`

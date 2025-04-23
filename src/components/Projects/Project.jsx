@@ -36,6 +36,10 @@ const ProjectLinks = styled.div`
   @media ${media.smallDesktop} {
     width: 30%;
   }
+
+  @media ${media.desktop} {
+    width: 20%;
+  }
 `;
 
 const Project = (props) => {

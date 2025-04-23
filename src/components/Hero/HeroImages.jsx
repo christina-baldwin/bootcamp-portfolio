@@ -17,8 +17,13 @@ const HeroImgs = styled.div`
   @media ${media.tabletLandscape} {
     height: 40rem;
   }
+
   @media ${media.smallDesktop} {
     height: 50rem;
+  }
+
+  @media ${media.desktop} {
+    height: 60rem;
   }
 `;
 const HeroImg = styled.img`
@@ -50,8 +55,8 @@ const HeroImg = styled.img`
     z-index: 1;
   }
 
-  @media ${media.tablet} {
-    width: 30%;
+  @media ${media.desktop} {
+    max-width: 400px;
   }
 `;
 
