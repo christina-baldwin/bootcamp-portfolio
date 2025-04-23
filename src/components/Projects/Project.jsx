@@ -56,7 +56,7 @@ const Project = (props) => {
         ))}
       </SkillTags>
       <p className="m-b-s">{props.description}</p>
-      <p className="category-tag m-b-s">#{props.tag}-project</p>
+      <p className="text-italic m-b-s">#{props.tag}-project</p>
       <ProjectLinks>
         <ProjectLink linkType="demo" href={props.link}>
           <ion-icon name="globe-outline"></ion-icon>To Project Demo
