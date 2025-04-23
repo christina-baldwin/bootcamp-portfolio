@@ -1,7 +1,6 @@
 import skillsData from "../../data/skills.json";
 import styled from "styled-components";
 import { media } from "../../media";
-import { media } from "../../media";
 
 const SkillsContainer = styled.div`
   display: flex;
