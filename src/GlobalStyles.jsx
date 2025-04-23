@@ -56,6 +56,10 @@ hr {
   margin: 0 auto;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .text-center {
   text-align: center;
 }

@@ -1,10 +1,9 @@
 import BlogArticle from "./BlogArticle";
 import articlesData from "../../data/articles.json";
-import "./Blog.css";
 
 const Blog = () => {
   return (
-    <div className="blog m-b-l p-l">
+    <div className="m-b-l p-l">
       <h2 className="text-center">Blog</h2>
       {articlesData.articles.map((article) => (
         <BlogArticle
