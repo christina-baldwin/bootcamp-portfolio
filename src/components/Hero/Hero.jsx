@@ -12,7 +12,7 @@ const HeroButton = styled.button`
   padding: 10px 20px;
   font-size: 1.5rem;
   background-color: #4ecdc4;
-  color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
