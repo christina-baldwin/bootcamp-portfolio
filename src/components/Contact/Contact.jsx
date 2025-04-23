@@ -8,19 +8,20 @@ const ContactLinks = styled.div`
   gap: 2rem;
   justify-content: center;
 `;
+
 const ContactLink = styled.a`
   color: #4ecdc4;
   font-size: 2.5rem;
+
+  &:link,
+  &:visited {
+    color: #4ecdc4;
+  }
 
   &:hover,
   &:active {
     transition: all 0.3s ease;
     color: white;
-  }
-
-  &:link,
-  &:visited {
-    color: #4ecdc4;
   }
 `;
 
@@ -33,10 +34,10 @@ const Contact = () => {
       <p className="m-b-s">+46(0)729 193 108</p>
       <p className="m-b-s">christina.baldwin13@yahoo.com</p>
       <ContactLinks>
-        <ContactLink href="">
+        <ContactLink href="#">
           <ion-icon name="logo-linkedin"></ion-icon>
         </ContactLink>
-        <ContactLink href="">
+        <ContactLink href="#">
           <ion-icon name="logo-github"></ion-icon>
         </ContactLink>
       </ContactLinks>
