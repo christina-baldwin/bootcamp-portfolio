@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../media";
 
 const StyledBtn = styled.a`
   display: flex;
@@ -19,6 +20,10 @@ const StyledBtn = styled.a`
   &:hover,
   &:active {
     transform: translate(2px, -2px);
+  }
+
+  @media ${media.tablet} {
+    width: 50%;
   }
 `;
 

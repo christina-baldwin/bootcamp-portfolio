@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../media";
 
 const HeroImgs = styled.div`
   position: relative;
@@ -8,6 +9,10 @@ const HeroImgs = styled.div`
   width: 100%;
   aspect-ratio: 3 / 1;
   height: 20rem;
+
+  @media ${media.tablet} {
+    height: 30rem;
+  }
 `;
 const HeroImg = styled.img`
   position: absolute;
@@ -36,6 +41,10 @@ const HeroImg = styled.img`
   &.img-3 {
     transform: rotate(10deg) translateX(100%);
     z-index: 1;
+  }
+
+  @media ${media.tablet} {
+    width: 30%;
   }
 `;
 

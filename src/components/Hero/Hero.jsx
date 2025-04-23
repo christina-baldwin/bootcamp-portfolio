@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import HeroImages from "./HeroImages";
+import { media } from "../../media";
 
 const HeroSection = styled.div`
   display: flex;
@@ -8,9 +9,13 @@ const HeroSection = styled.div`
   align-items: center;
   text-align: center;
   padding: 3rem;
+
+  @media ${media.tablet} {
+    padding: 4rem;
+  }
 `;
 const HeroLogo = styled.img`
-  width: 20%;
+  width: 15%;
 `;
 const HeroButton = styled.button`
   padding: 10px 20px;

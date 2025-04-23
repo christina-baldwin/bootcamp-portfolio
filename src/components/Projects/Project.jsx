@@ -19,6 +19,10 @@ const ProjectLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  @media ${media.tablet} {
+    width: 50%;
+  }
 `;
 
 const Project = (props) => {

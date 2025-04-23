@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../media";
 
 const Article = styled.div`
   display: flex;
@@ -22,7 +23,7 @@ const ArticleLink = styled.a`
   text-decoration: none;
   padding: 0.2rem 0.4rem;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
   background-color: #4ecdc4;
   color: black;
@@ -36,6 +37,10 @@ const ArticleLink = styled.a`
   &:hover,
   &:active {
     transform: translate(2px, -2px);
+  }
+
+  @media ${media.tablet} {
+    width: 50%;
   }
 `;
 
