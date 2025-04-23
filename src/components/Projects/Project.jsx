@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProjectBtn from "../Btns/ProjectBtn";
+import { media } from "../../media";
 
 const ProjectContainer = styled.div``;
 
@@ -22,6 +23,10 @@ const ProjectLinks = styled.div`
 
   @media ${media.tablet} {
     width: 50%;
+  }
+
+  @media ${media.tabletLandscape} {
+    width: 40%;
   }
 `;
 

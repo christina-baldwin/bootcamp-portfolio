@@ -104,6 +104,12 @@ hr {
   color: white;
 }
 
+@media ${media.tabletLandscape} {
+  html {
+    font-size: 105%;
+  }
+}
+
 }
 `;
 

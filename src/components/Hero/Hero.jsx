@@ -16,6 +16,10 @@ const HeroSection = styled.div`
 `;
 const HeroLogo = styled.img`
   width: 15%;
+
+  @media ${media.tabletLandscape} {
+    width: 10%;
+  }
 `;
 const HeroButton = styled.button`
   padding: 10px 20px;

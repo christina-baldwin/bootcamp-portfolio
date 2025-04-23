@@ -42,6 +42,10 @@ const ArticleLink = styled.a`
   @media ${media.tablet} {
     width: 50%;
   }
+
+  @media ${media.tabletLandscape} {
+    width: 40%;
+  }
 `;
 
 const BlogArticle = (props) => {

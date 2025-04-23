@@ -13,6 +13,10 @@ const HeroImgs = styled.div`
   @media ${media.tablet} {
     height: 30rem;
   }
+
+  @media ${media.tabletLandscape} {
+    height: 40rem;
+  }
 `;
 const HeroImg = styled.img`
   position: absolute;
