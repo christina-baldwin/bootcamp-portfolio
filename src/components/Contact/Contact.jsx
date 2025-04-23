@@ -1,8 +1,27 @@
-import "./Contact.css";
 import styled from "styled-components";
 
 const ContactContainer = styled.div`
   text-align: center;
+`;
+const ContactLinks = styled.div`
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+`;
+const ContactLink = styled.a`
+  color: #4ecdc4;
+  font-size: 2.5rem;
+
+  &:hover,
+  &:active {
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  &:link,
+  &:visited {
+    color: #4ecdc4;
+  }
 `;
 
 const Contact = () => {
@@ -13,14 +32,14 @@ const Contact = () => {
       <h3>Christina Baldwin</h3>
       <p className="m-b-s">+46(0)729 193 108</p>
       <p className="m-b-s">christina.baldwin13@yahoo.com</p>
-      <div className="contact-links">
-        <a className="contact-link" href="">
+      <ContactLinks>
+        <ContactLink href="">
           <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a className="contact-link" href="">
+        </ContactLink>
+        <ContactLink href="">
           <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </div>
+        </ContactLink>
+      </ContactLinks>
     </ContactContainer>
   );
 };
