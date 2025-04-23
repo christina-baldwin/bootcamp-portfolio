@@ -1,10 +1,33 @@
+import styled from "styled-components";
 import HeroImages from "./HeroImages";
-import "./Hero.css";
+
+const HeroSection = styled.div`
+  text-align: center;
+  padding: 5rem 7rem;
+`;
+const HeroLogo = styled.img`
+  width: 3%;
+`;
+const HeroButton = styled.button`
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #4ecdc4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    transition: all 0.3s ease;
+    transform: translate(2px, -2px);
+  }
+`;
 
 const Hero = (props) => {
   return (
-    <div className="hero m-b-l">
-      <img className="logo m-b-s" src={props.logo} />
+    <HeroSection className="m-b-l">
+      <HeroLogo className="logo m-b-s" src={props.logo} />
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
       <hr />
@@ -19,8 +42,8 @@ const Hero = (props) => {
         Outside of coding, I enjoy Olympic weightlifting, CrossFit, reading, and
         playing video games.
       </p>
-      <button className="hero-btn">Contact Me!</button>
-    </div>
+      <HeroButton>Contact Me!</HeroButton>
+    </HeroSection>
   );
 };
 

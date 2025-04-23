@@ -1,12 +1,51 @@
-import "./HeroImages.css";
+import styled from "styled-components";
+
+const HeroImgs = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  height: 45rem;
+`;
+const HeroImg = styled.img`
+  position: absolute;
+  width: 30%;
+  max-width: 300px;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  &.img-1 {
+    transform: rotate(-10deg) translateX(-100%);
+    z-index: 1;
+  }
+
+  &.img-2 {
+    transform: rotate(0deg);
+    z-index: 2;
+
+    &:hover,
+    &:active {
+      transition: all 0.3s ease;
+      transform: scale(1.07);
+    }
+  }
+
+  &.img-3 {
+    transform: rotate(10deg) translateX(100%);
+    z-index: 1;
+  }
+`;
 
 const HeroImages = () => {
   return (
-    <div className="hero-imgs">
-      <img src="/hero-img-1.jpg" className="hero-img img-1" />
-      <img src="/hero-img-2.png" className="hero-img img-2" />
-      <img src="/hero-img-3.jpg" className="hero-img img-3" />
-    </div>
+    <HeroImgs className="hero-imgs">
+      <HeroImg src="/hero-img-1.jpg" className="img-1" />
+      <HeroImg src="/hero-img-2.png" className="img-2" />
+      <HeroImg src="/hero-img-3.jpg" className="img-3" />
+    </HeroImgs>
   );
 };
 
