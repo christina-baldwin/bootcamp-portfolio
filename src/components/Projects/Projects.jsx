@@ -1,7 +1,6 @@
 import projectsData from "../../data/projects.json";
 import Project from "./Project";
 import Dropdown from "./Dropdown";
-import "./Projects.css";
 
 const Projects = () => {
   return (
