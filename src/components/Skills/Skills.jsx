@@ -1,6 +1,7 @@
 import skillsData from "../../data/skills.json";
 import styled from "styled-components";
 import { media } from "../../media";
+import FadeInOnScroll from "../../FadeInOnScroll";
 
 const SkillsContainer = styled.div`
   display: flex;
@@ -43,23 +44,25 @@ const SkillName = styled.li`
 
 const Skills = () => {
   return (
-    <SkillsContainer className="m-b-l p-l bg-colour-1">
-      <h2 className="text-center">Skills</h2>
-      <SkillsTable>
-        {skillsData.skills.map((skill) => (
-          <div key={skill.name}>
-            <SkillName className="skill-name text-center p-s">
-              {skill.name}
-            </SkillName>
-            <SkillsList>
-              {skill.skills.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </SkillsList>
-          </div>
-        ))}
-      </SkillsTable>
-    </SkillsContainer>
+    <FadeInOnScroll>
+      <SkillsContainer className="m-b-l p-l bg-colour-1">
+        <h2 className="text-center">Skills</h2>
+        <SkillsTable>
+          {skillsData.skills.map((skill) => (
+            <div key={skill.name}>
+              <SkillName className="skill-name text-center p-s">
+                {skill.name}
+              </SkillName>
+              <SkillsList>
+                {skill.skills.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </SkillsList>
+            </div>
+          ))}
+        </SkillsTable>
+      </SkillsContainer>
+    </FadeInOnScroll>
   );
 };
 

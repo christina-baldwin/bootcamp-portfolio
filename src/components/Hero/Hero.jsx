@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import HeroImages from "./HeroImages";
 import { media } from "../../media";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import FadeInOnScroll from "../../FadeInOnScroll";
 
 const HeroSection = styled.div`
   display: flex;
@@ -56,7 +59,7 @@ const HeroButton = styled.button`
   }
 `;
 
-const StyledHr = styled.hr`
+const StyledHr = styled(motion.hr)`
   width: 100%;
   max-width: 100%;
   border: none;
@@ -72,7 +75,9 @@ const Hero = (props) => {
       <h3>Hi! I'm</h3>
       <h1>{props.name}</h1>
       <StyledHr />
-      <HeroImages />
+      <FadeInOnScroll>
+        <HeroImages />
+      </FadeInOnScroll>
       <h3>{props.title}</h3>
       <p className="m-b-s">
         I began learning frontend and web development in March 2024 after moving

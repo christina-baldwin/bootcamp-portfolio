@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import FadeInOnScroll from "../../FadeInOnScroll";
 
 const ContactContainer = styled.div`
   display: flex;
@@ -39,21 +40,23 @@ const StyledHr = styled.hr`
 
 const Contact = () => {
   return (
-    <ContactContainer className="m-b-l p-m">
-      <h2 className="text-center">Get in touch!</h2>
-      <StyledHr className="m-b-s" />
-      <h3 className="text-center">Christina Baldwin</h3>
-      <p className="text-center m-b-s">+46(0)729 193 108</p>
-      <p className="text-center m-b-s">christina.baldwin13@yahoo.com</p>
-      <ContactLinks>
-        <ContactLink href="#">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </ContactLink>
-        <ContactLink href="#">
-          <ion-icon name="logo-github"></ion-icon>
-        </ContactLink>
-      </ContactLinks>
-    </ContactContainer>
+    <FadeInOnScroll>
+      <ContactContainer className="m-b-l p-m">
+        <h2 className="text-center">Get in touch!</h2>
+        <StyledHr className="m-b-s" />
+        <h3 className="text-center">Christina Baldwin</h3>
+        <p className="text-center m-b-s">+46(0)729 193 108</p>
+        <p className="text-center m-b-s">christina.baldwin13@yahoo.com</p>
+        <ContactLinks>
+          <ContactLink href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </ContactLink>
+          <ContactLink href="#">
+            <ion-icon name="logo-github"></ion-icon>
+          </ContactLink>
+        </ContactLinks>
+      </ContactContainer>
+    </FadeInOnScroll>
   );
 };
 
