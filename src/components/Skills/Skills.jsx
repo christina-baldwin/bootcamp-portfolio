@@ -32,14 +32,23 @@ const SkillsTable = styled.div`
 
 const SkillsList = styled.ul`
   list-style: none;
+  padding: 0;
+  margin: 0;
   text-align: center;
 `;
 
 const SkillName = styled.li`
   list-style: none;
-  background-color: #4ecdc4;
   border-radius: 5px;
+`;
+
+const SkillCategoryName = styled.h3`
+  background-color: #4ecdc4;
   padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
 `;
 
 const Skills = () => {
@@ -48,20 +57,17 @@ const Skills = () => {
       <SkillsContainer className="m-b-l p-l bg-colour-1">
         <h2 className="text-center">Skills</h2>
         <SkillsTable>
-          <SkillsList>
-            {skillsData.skills.map((skill) => (
-              <div key={skill.name}>
-                <SkillName className="skill-name text-center p-s">
-                  {skill.name}
-                </SkillName>
-                <SkillsList>
-                  {skill.skills.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </SkillsList>
-              </div>
-            ))}
-          </SkillsList>
+          {skillsData.skills.map((skill) => (
+            <div key={skill.name}>
+              <SkillCategoryName>{skill.name}</SkillCategoryName>
+
+              <SkillsList>
+                {skill.skills.map((item, index) => (
+                  <SkillName key={index}>{item}</SkillName>
+                ))}
+              </SkillsList>
+            </div>
+          ))}
         </SkillsTable>
       </SkillsContainer>
     </FadeInOnScroll>
