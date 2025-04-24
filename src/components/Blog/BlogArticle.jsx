@@ -80,13 +80,13 @@ const ArticleLink = styled.a`
 const BlogArticle = (props) => {
   return (
     <Article key={props.title} className="m-b-m">
-      <ArticleImg src={props.img} />
+      <ArticleImg src={props.img} alt={props.imgDesc} />
       <div>
         <ArticleDate className="text-center m-b-s">{props.date}</ArticleDate>
         <h3>{props.title}</h3>
         <p className="m-b-s">{props.desc}</p>
         <p className="text-italic m-b-s">#{props.type}-article</p>
-        <ArticleLink className="m-b-s" href={props.link}>
+        <ArticleLink className="m-b-s" href={props.link} aria-label="Read the full article">
           <ion-icon name="globe-outline"></ion-icon>Read article
         </ArticleLink>
       </div>

@@ -48,10 +48,10 @@ const Contact = () => {
         <p className="text-center m-b-s">+46(0)729 193 108</p>
         <p className="text-center m-b-s">christina.baldwin13@yahoo.com</p>
         <ContactLinks>
-          <ContactLink href="#">
+          <ContactLink href="#" aria-label="Go to LinkedIn account">
             <ion-icon name="logo-linkedin"></ion-icon>
           </ContactLink>
-          <ContactLink href="#">
+          <ContactLink href="#" aria-label="Go to GitHub account">
             <ion-icon name="logo-github"></ion-icon>
           </ContactLink>
         </ContactLinks>

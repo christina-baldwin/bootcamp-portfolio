@@ -67,9 +67,21 @@ const HeroImg = styled.img`
 const HeroImages = () => {
   return (
     <HeroImgs className="hero-imgs">
-      <HeroImg src="/hero-img-1.jpg" className="img-1" />
-      <HeroImg src="/hero-img-2.png" className="img-2" />
-      <HeroImg src="/hero-img-3.jpg" className="img-3" />
+      <HeroImg
+        src="/hero-img-1.jpg"
+        className="img-1"
+        alt="Image of code on a screen."
+      />
+      <HeroImg
+        src="/hero-img-2.png"
+        className="img-2"
+        alt="Image of Christina Baldwin."
+      />
+      <HeroImg
+        src="/hero-img-3.jpg"
+        className="img-3"
+        alt="Image of a computer on a desk."
+      />
     </HeroImgs>
   );
 };

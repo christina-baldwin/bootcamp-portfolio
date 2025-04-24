@@ -46,7 +46,12 @@ const Dropdown = () => {
   return (
     <DropdownWrapper>
       <DropdownContainer className="dropdown text-center m-b-m">
-        <button className="text-center">Filter by project type</button>
+        <button
+          className="text-center"
+          aria-label="Click to open dropdown and select a filter"
+        >
+          Filter by project type
+        </button>
         <DropdownMenu className="dropdown-menu">
           <DropdownItem>Custom projects</DropdownItem>
           <DropdownItem>Bootcamp projects</DropdownItem>

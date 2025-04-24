@@ -7,7 +7,8 @@
       "desc": "In this article, we will go over the steps necessary to download a popular text editor called Visual Studio Code, also referred to as “VS Code.” By the end of the article you will be able to create a folder in Visual Studio Code that contains an HTML document that you can open in your web browser. ",
       "type": "external",
       "link": "https://www.codecademy.com/article/visual-studio-code",
-      "img": "https://content.codecademy.com/articles/visual-studio-code/vsc-screenshot.png"
+      "img": "https://content.codecademy.com/articles/visual-studio-code/vsc-screenshot.png",
+      "imgDesc": "Image of VSCode drawn from the article."
     }
   ]
 }

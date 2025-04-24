@@ -17,9 +17,10 @@ const Blog = () => {
             link={article.link}
             type={article.type}
             img={article.img}
+            imgDesc={article.imgDesc}
           />
         ))}
-        <SeeMore section="articles" />
+        <SeeMore section="articles" aria-label="See more articles" />
       </div>
     </FadeInOnScroll>
   );

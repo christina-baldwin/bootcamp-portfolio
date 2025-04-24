@@ -48,18 +48,20 @@ const Skills = () => {
       <SkillsContainer className="m-b-l p-l bg-colour-1">
         <h2 className="text-center">Skills</h2>
         <SkillsTable>
-          {skillsData.skills.map((skill) => (
-            <div key={skill.name}>
-              <SkillName className="skill-name text-center p-s">
-                {skill.name}
-              </SkillName>
-              <SkillsList>
-                {skill.skills.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </SkillsList>
-            </div>
-          ))}
+          <SkillsList>
+            {skillsData.skills.map((skill) => (
+              <div key={skill.name}>
+                <SkillName className="skill-name text-center p-s">
+                  {skill.name}
+                </SkillName>
+                <SkillsList>
+                  {skill.skills.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </SkillsList>
+              </div>
+            ))}
+          </SkillsList>
         </SkillsTable>
       </SkillsContainer>
     </FadeInOnScroll>

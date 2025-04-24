@@ -47,6 +47,7 @@ const Project = (props) => {
           href="https://example.com"
           iconName="globe-outline"
           text="To Project Demo"
+          aria-label="View the live demonstration of the project"
         />
 
         <ProjectBtn
@@ -54,6 +55,7 @@ const Project = (props) => {
           href="https://github.com/username/project"
           iconName="logo-github"
           text="View Code"
+          aria-label="View the source code"
         />
       </ProjectLinks>
     </ProjectContainer>

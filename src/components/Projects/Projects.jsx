@@ -27,7 +27,7 @@ const Projects = () => {
             github={project.github}
           />
         ))}
-        <SeeMore section="projects" />
+        <SeeMore section="projects" aria-label="See more projects" />
       </div>
     </FadeInOnScroll>
   );
