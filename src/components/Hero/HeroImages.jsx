@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import heroImg1 from "/hero-img-1.jpg";
+import heroImg2 from "/hero-img-2.png";
+import heroImg3 from "/hero-img-3.jpg";
 import { media } from "../../media";
 
 const HeroImgs = styled.div`
@@ -68,17 +71,17 @@ const HeroImages = () => {
   return (
     <HeroImgs className="hero-imgs">
       <HeroImg
-        src="/hero-img-1.jpg"
+        src={heroImg1}
         className="img-1"
         alt="Image of code on a screen."
       />
       <HeroImg
-        src="/hero-img-2.png"
+        src={heroImg2}
         className="img-2"
         alt="Image of Christina Baldwin."
       />
       <HeroImg
-        src="/hero-img-3.jpg"
+        src={heroImg3}
         className="img-3"
         alt="Image of a computer on a desk."
       />

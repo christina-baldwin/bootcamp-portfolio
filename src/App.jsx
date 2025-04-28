@@ -7,6 +7,7 @@ import Blog from "./components/Blog/Blog.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import GlobalStyle from "./GlobalStyles.jsx";
 import styled from "styled-components";
+import logo from "/logo192.png";
 
 const AppWrapper = styled.div`
   max-width: 1500px;
@@ -19,8 +20,7 @@ export const App = () => {
       <GlobalStyle />
       <AppWrapper>
         <Hero
-          logo="/logo192.png"
-          img="/hero-img.png"
+          logo={logo}
           name="Christina Baldwin"
           title="A Frontend Developer with a Background in Sustainability"
         />

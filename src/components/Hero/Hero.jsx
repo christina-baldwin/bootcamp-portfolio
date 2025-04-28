@@ -2,7 +2,6 @@ import styled from "styled-components";
 import HeroImages from "./HeroImages";
 import { media } from "../../media";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import FadeInOnScroll from "../../FadeInOnScroll";
 
 const HeroSection = styled.div`
