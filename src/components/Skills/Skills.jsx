@@ -20,6 +20,10 @@ const SkillsTitle = styled.h2`
   font-family: Poppins;
   font-size: 48px;
   font-weight: 700;
+
+  @media ${media.smallDesktop} {
+    font-size: 80px;
+  }
 `;
 
 const SkillsTable = styled.div`
@@ -35,11 +39,7 @@ const SkillsTable = styled.div`
   }
 
   @media ${media.smallDesktop} {
-    gap: 2rem;
-  }
-
-  @media ${media.desktop} {
-    gap: 3rem;
+    padding: 128px;
   }
 `;
 
@@ -50,6 +50,11 @@ const SkillsList = styled.ul`
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
+
+  @media ${media.smallDesktop} {
+    text-align: left;
+    font-size: 18px;
+  }
 `;
 
 const SkillName = styled.li`

@@ -9,6 +9,23 @@ const ContactContainer = styled.div`
   align-items: center;
   padding: 64px 0px;
   gap: 16px;
+
+  @media ${media.smallDesktop} {
+    padding: 128px;
+    gap: 128px;
+  }
+`;
+
+const ContactTitle = styled.h2`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+
+  @media ${media.smallDesktop} {
+    font-size: 80px;
+  }
 `;
 
 const ContactTextContainer = styled.div`
@@ -16,7 +33,6 @@ const ContactTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  font-size: 24px;
 `;
 
 const ContactText = styled.p`
@@ -27,6 +43,10 @@ const ContactText = styled.p`
 
   @media ${media.tabletLandscape} {
     font-size: 24px;
+  }
+
+  @media ${media.smallDesktop} {
+    font-size: 30px;
   }
 `;
 
@@ -66,7 +86,7 @@ const Contact = () => {
   return (
     <FadeInOnScroll>
       <ContactContainer className="m-b-l p-m">
-        <h2 className="text-center">Get in touch!</h2>
+        <ContactTitle>Get in touch!</ContactTitle>
         <StyledHr className="m-b-s" />
         <ContactTextContainer>
           <ContactText>Christina Baldwin</ContactText>

@@ -13,10 +13,8 @@ const HeroSection = styled.div`
   text-align: center;
   padding: 64px 24px;
 
-  @media ${media.tablet} {
-  }
-
   @media ${media.smallDesktop} {
+    padding: 128px 0px 64px 0px;
   }
 
   @media ${media.desktop} {
@@ -28,6 +26,10 @@ const HeroIntro = styled.h2`
   font-family: Poppins;
   font-size: 24px;
   font-weight: 500;
+
+  @media ${media.smallDesktop} {
+    font-size: 30px;
+  }
 `;
 
 const HeroMain = styled.h1`
@@ -41,6 +43,10 @@ const HeroMain = styled.h1`
   @media ${media.tabletLandscape} {
     line-height: 100px;
   }
+
+  @media ${media.smallDesktop} {
+    font-size: 100px;
+  }
 `;
 
 const HeroTitle = styled.h2`
@@ -49,6 +55,10 @@ const HeroTitle = styled.h2`
   font-family: Poppins;
   font-size: 24px;
   font-weight: 500;
+
+  @media ${media.smallDesktop} {
+    font-size: 30px;
+  }
 `;
 
 const HeroDesc = styled.p`
@@ -57,6 +67,10 @@ const HeroDesc = styled.p`
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
+
+  @media ${media.smallDesktop} {
+    font-size: 18px;
+  }
 `;
 
 const HeroLogo = styled.img`
