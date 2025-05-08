@@ -15,7 +15,7 @@ const Projects = () => {
           courses. Please use the filter to better see what type of projects you
           are viewing.
         </p>
-        <Dropdown />
+        {/* <Dropdown /> */}
         {projectsData.projects.map((project) => (
           <Project
             key={project.id}

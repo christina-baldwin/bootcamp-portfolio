@@ -9,27 +9,32 @@ const HeroImgs = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 15rem;
   aspect-ratio: 3 / 1;
   height: 20rem;
 
   @media ${media.tablet} {
+    width: 20rem;
     height: 30rem;
   }
 
   @media ${media.tabletLandscape} {
+    width: 30rem;
     height: 40rem;
   }
 
   @media ${media.smallDesktop} {
+    width: 40rem;
     height: 50rem;
   }
 
   @media ${media.desktop} {
+    width: 50rem;
     height: 60rem;
   }
 
   media ${media.largeDesktop} {
+    width: 60rem;
     height: 70rem;
   }
 `;

@@ -23,10 +23,15 @@ const StyledBtn = styled.a`
   }
 
   @media ${media.tablet} {
-    width: 50%;
+    width: 100%;
+  }
+
+  @media ${media.tabletLandscape} {
+    width: 70%;
   }
 
   @media ${media.desktop} {
+    widht: 60%;
     font-size: 1.2rem;
   }
 `;

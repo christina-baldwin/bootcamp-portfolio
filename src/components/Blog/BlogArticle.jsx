@@ -15,6 +15,7 @@ const Article = styled.div`
   }
 `;
 const ArticleImg = styled.img`
+  object-fit: cover;
   max-width: 100%;
   border-radius: 5px;
 
@@ -86,7 +87,11 @@ const BlogArticle = (props) => {
         <h3>{props.title}</h3>
         <p className="m-b-s">{props.desc}</p>
         <p className="text-italic m-b-s">#{props.type}-article</p>
-        <ArticleLink className="m-b-s" href={props.link} aria-label="Read the full article">
+        <ArticleLink
+          className="m-b-s"
+          href={props.link}
+          aria-label="Read the full article"
+        >
           <ion-icon name="globe-outline"></ion-icon>Read article
         </ArticleLink>
       </div>
