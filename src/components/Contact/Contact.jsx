@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import FadeInOnScroll from "../../FadeInOnScroll";
+import { media } from "../../media";
 
 const ContactContainer = styled.div`
   display: flex;
@@ -23,6 +24,10 @@ const ContactText = styled.p`
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
+
+  @media ${media.tabletLandscape} {
+    font-size: 24px;
+  }
 `;
 
 const ContactLinks = styled.div`

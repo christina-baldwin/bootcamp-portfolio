@@ -17,29 +17,6 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
 button {
   background-color: #4ecdc4;
   border: none;
@@ -104,45 +81,6 @@ hr {
   color: white;
 }
 
-@media ${media.tabletLandscape} {
-  html {
-    font-size: 105%;
-  }
-}
-
-@media ${media.smallDesktop} {
-  html {
-    font-size: 110%;
-  }
-}
-
-  @media ${media.desktop} {
-   h1 {
-   font-size: 4rem;
-   } 
-
-   h2 {
-    font-size: 2.5rem;
-    }
-
-h3 {
-  font-size: 1.7rem;
-}
-
-h4 {
-  font-size: 1.4rem;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-button {
-  font-size: 1.3rem;
-}
-
-  }
-}
 `;
 
 export default GlobalStyle;

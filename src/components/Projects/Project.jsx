@@ -5,11 +5,13 @@ import { media } from "../../media";
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   gap: 32px;
+  width: 100%;
 
   @media ${media.smallDesktop} {
-    padding-right: 7rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 `;
 
@@ -37,7 +39,7 @@ const ProjectLinks = styled.div`
 
 const Project = (props) => {
   return (
-    <ProjectContainer key={props.title} className="m-b-m">
+    <ProjectContainer key={props.title}>
       <h3>{props.title}</h3>
       <SkillTags className="m-b-s">
         {props.skills.map((skill, index) => (

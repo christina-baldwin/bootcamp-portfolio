@@ -14,17 +14,51 @@ const HeroSection = styled.div`
   padding: 64px 24px;
 
   @media ${media.tablet} {
-    padding: 4rem;
   }
 
   @media ${media.smallDesktop} {
-    padding: 5rem;
   }
 
   @media ${media.desktop} {
-    padding: 6rem;
   }
 `;
+const HeroIntro = styled.h2`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+`;
+
+const HeroMain = styled.h1`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 80px;
+
+  @media ${media.tabletLandscape} {
+    line-height: 100px;
+  }
+`;
+
+const HeroTitle = styled.h2`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+`;
+
+const HeroDesc = styled.p`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
 const HeroLogo = styled.img`
   width: 15%;
 
@@ -45,12 +79,18 @@ const HeroLogo = styled.img`
   }
 `;
 const HeroButton = styled.button`
-  padding: 10px 20px;
   background-color: #4ecdc4;
   color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
+  display: flex;
+  width: 204px;
+  height: 38px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 
   &:hover,
   &:active {
@@ -72,14 +112,14 @@ const Hero = (props) => {
   return (
     <HeroSection className="m-b-l">
       <HeroLogo className="logo m-b-s" src={props.logo} alt="Site logo." />
-      <h2>Hi! I'm</h2>
-      <h1>{props.name}</h1>
+      <HeroIntro>Hi! I'm</HeroIntro>
+      <HeroMain>{props.name}</HeroMain>
       <StyledHr />
       <FadeInOnScroll>
         <HeroImages />
       </FadeInOnScroll>
-      <h2>{props.title}</h2>
-      <p className="m-b-s">
+      <HeroTitle>{props.title}</HeroTitle>
+      <HeroDesc>
         I began learning frontend and web development in March 2024 after moving
         to Sweden, where I had time to rediscover my interest in tech. With
         access to resources, I quickly became invested in coding and decided to
@@ -87,7 +127,7 @@ const Hero = (props) => {
         Bootcamp to continue building my skills and collaborate with others.
         Outside of coding, I enjoy Olympic weightlifting, CrossFit, reading, and
         playing video games.
-      </p>
+      </HeroDesc>
       <HeroButton aria-label="Click to scroll down to the contact section.">
         Contact Me!
       </HeroButton>
