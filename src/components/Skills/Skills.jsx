@@ -5,14 +5,27 @@ import FadeInOnScroll from "../../FadeInOnScroll";
 
 const SkillsContainer = styled.div`
   display: flex;
+  padding: 64px 24px;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  background-color: white;
+  color: black;
+`;
+
+const SkillsTitle = styled.h2`
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
 `;
 
 const SkillsTable = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 24px;
   margin: 0 auto;
   justify-content: center;
 
@@ -32,9 +45,11 @@ const SkillsTable = styled.div`
 
 const SkillsList = styled.ul`
   list-style: none;
-  padding: 0;
-  margin: 0;
+  color: #000;
   text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
 `;
 
 const SkillName = styled.li`
@@ -44,18 +59,18 @@ const SkillName = styled.li`
 
 const SkillCategoryName = styled.h3`
   background-color: #4ecdc4;
-  padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-bottom: 1rem;
   font-size: 1.2rem;
   text-align: center;
+  padding: 2px 6px;
 `;
 
 const Skills = () => {
   return (
     <FadeInOnScroll>
-      <SkillsContainer className="m-b-l p-l bg-colour-1">
-        <h2 className="text-center">Skills</h2>
+      <SkillsContainer>
+        <SkillsTitle>Skills</SkillsTitle>
         <SkillsTable>
           {skillsData.skills.map((skill) => (
             <div key={skill.name}>

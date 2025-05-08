@@ -3,11 +3,17 @@ import styled from "styled-components";
 const SeeMoreBtn = styled.button`
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 16px;
   background-color: black;
   color: white;
   border: 3px solid #4ecdc4;
   cursor: pointer;
+  padding: 0px 16px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
 
   &:hover,
   &:active {

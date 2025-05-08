@@ -4,7 +4,9 @@ import { media } from "../../media";
 const Article = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
 
   @media ${media.smallDesktop} {
     flex-direction: row;
@@ -17,7 +19,7 @@ const Article = styled.div`
 const ArticleImg = styled.img`
   object-fit: cover;
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 12px;
 
   @media ${media.smallDesktop} {
     max-width: 50%;
@@ -30,10 +32,11 @@ const ArticleImg = styled.img`
   }
 `;
 const ArticleDate = styled.p`
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 0.2rem;
-  width: 100%;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 142px;
+  padding: 2px 6px;
+  text-align: center;
 
   @media ${media.smallDesktop} {
     width: 40%;
@@ -42,17 +45,33 @@ const ArticleDate = styled.p`
     width: 30%;
   }
 `;
+
+const ArticleTitle = styled.h3`
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+`;
+
+const ArticleText = styled.p`
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+`;
+
 const ArticleLink = styled.a`
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 16px;
   text-decoration: none;
   padding: 0.2rem 0.4rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 18px;
   transition: all 0.3s ease;
   background-color: #4ecdc4;
   color: black;
+  font-weight: 500;
 
   &:link,
   &:visited {
@@ -84,8 +103,8 @@ const BlogArticle = (props) => {
       <ArticleImg src={props.img} alt={props.imgDesc} />
       <div>
         <ArticleDate className="text-center m-b-s">{props.date}</ArticleDate>
-        <h3>{props.title}</h3>
-        <p className="m-b-s">{props.desc}</p>
+        <ArticleTitle>{props.title}</ArticleTitle>
+        <ArticleText>{props.desc}</ArticleText>
         <p className="text-italic m-b-s">#{props.type}-article</p>
         <ArticleLink
           className="m-b-s"

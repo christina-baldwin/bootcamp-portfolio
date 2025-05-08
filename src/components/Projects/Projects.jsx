@@ -1,14 +1,32 @@
 import projectsData from "../../data/projects.json";
 import Project from "./Project";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 import SeeMore from "../Btns/SeeMoreBtn";
 import FadeInOnScroll from "../../FadeInOnScroll";
+import styled from "styled-components";
+
+const ProjectsSection = styled.div`
+  display: flex;
+  padding: 64px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+`;
+
+const ProjectsHeading = styled.h2`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+`;
 
 const Projects = () => {
   return (
     <FadeInOnScroll>
-      <div className="projects m-b-l p-m">
-        <h2 className="text-center">My Projects</h2>
+      <ProjectsSection>
+        <ProjectsHeading>My Projects</ProjectsHeading>
         <p className="text-center m-b-s">
           All of my different projects made either from scratch, from bootcamp
           prompts, customised from course projects, or guided from online
@@ -28,7 +46,7 @@ const Projects = () => {
           />
         ))}
         <SeeMore section="projects" aria-label="See more projects" />
-      </div>
+      </ProjectsSection>
     </FadeInOnScroll>
   );
 };

@@ -7,10 +7,11 @@ import FadeInOnScroll from "../../FadeInOnScroll";
 const HeroSection = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 16px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  padding: 64px 24px;
 
   @media ${media.tablet} {
     padding: 4rem;

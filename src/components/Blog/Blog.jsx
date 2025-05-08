@@ -2,12 +2,30 @@ import BlogArticle from "./BlogArticle";
 import SeeMore from "../Btns/SeeMoreBtn";
 import articlesData from "../../data/articles.json";
 import FadeInOnScroll from "../../FadeInOnScroll";
+import styled from "styled-components";
+
+const BlogSection = styled.div`
+  display: flex;
+  padding: 64px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+`;
+
+const BlogTitle = styled.h2`
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+`;
 
 const Blog = () => {
   return (
     <FadeInOnScroll>
-      <div className="m-b-l p-m">
-        <h2 className="text-center">Blog</h2>
+      <BlogSection>
+        <BlogTitle>My Words</BlogTitle>
         {articlesData.articles.map((article) => (
           <BlogArticle
             key={article.id}
@@ -21,7 +39,7 @@ const Blog = () => {
           />
         ))}
         <SeeMore section="articles" aria-label="See more articles" />
-      </div>
+      </BlogSection>
     </FadeInOnScroll>
   );
 };

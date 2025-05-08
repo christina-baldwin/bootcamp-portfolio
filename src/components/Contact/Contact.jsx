@@ -6,7 +6,25 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 64px 0px;
+  gap: 16px;
 `;
+
+const ContactTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+`;
+
+const ContactText = styled.p`
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+`;
+
 const ContactLinks = styled.div`
   display: flex;
   gap: 2rem;
@@ -16,6 +34,7 @@ const ContactLinks = styled.div`
 const ContactLink = styled.a`
   color: #4ecdc4;
   font-size: 2.5rem;
+  padding: 64px 0px;
 
   &:link,
   &:visited {
@@ -30,7 +49,7 @@ const ContactLink = styled.a`
 `;
 
 const StyledHr = styled.hr`
-  width: 100%;
+  width: 599px;
   max-width: 100%;
   border: none;
   height: 2px;
@@ -44,9 +63,11 @@ const Contact = () => {
       <ContactContainer className="m-b-l p-m">
         <h2 className="text-center">Get in touch!</h2>
         <StyledHr className="m-b-s" />
-        <h3 className="text-center">Christina Baldwin</h3>
-        <p className="text-center m-b-s">+46(0)729 193 108</p>
-        <p className="text-center m-b-s">christina.baldwin13@yahoo.com</p>
+        <ContactTextContainer>
+          <ContactText>Christina Baldwin</ContactText>
+          <ContactText>+46(0)729 193 108</ContactText>
+          <ContactText>christina.baldwin13@yahoo.com</ContactText>
+        </ContactTextContainer>
         <ContactLinks>
           <ContactLink href="#" aria-label="Go to LinkedIn account">
             <ion-icon name="logo-linkedin"></ion-icon>

@@ -3,12 +3,15 @@ import { media } from "../../media";
 
 const StyledBtn = styled.a`
   display: flex;
+  padding: 0px 16px;
   align-items: center;
-  gap: 0.4rem;
+  gap: 16px;
   text-decoration: none;
-  padding: 0.2rem 0.4rem;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 12px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
   transition: all 0.3s ease;
 
   background-color: ${(props) =>

@@ -3,6 +3,11 @@ import ProjectBtn from "../Btns/ProjectBtn";
 import { media } from "../../media";
 
 const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 32px;
+
   @media ${media.smallDesktop} {
     padding-right: 7rem;
   }
